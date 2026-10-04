@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7d0c26">
+  <meta name="description" content="Pembentangan Aluan Menjalankan Tugas Pengetua Kolej Tun Razak, Minggu Mesra Mahasiswa UTM sesi 2026/2027.">
+  <title>Aluan KTR — MMM 2026/2027</title>
+  <link rel="icon" href="assets/ascend.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <img class="brand" src="assets/utm.png" alt="Universiti Teknologi Malaysia">
+    <div class="identity"><strong>Kolej Tun Razak</strong><span>Minggu Mesra Mahasiswa 2026/2027</span></div>
+    <img class="ascend" src="assets/ascend.png" alt="UTM ASCEND 2030">
+  </header>
+  <main id="presentation">
+    <div class="deck-heading">
+      <div><h1>Aluan Menjalankan Tugas Pengetua</h1><p>Prof. Madya Dr. Mohd Murtadha bin Mohamad</p></div>
+      <button id="fullscreen" class="primary" type="button" title="Skrin penuh (F)">Mulakan pembentangan <span aria-hidden="true">⛶</span></button>
+    </div>
+    <section class="viewer" aria-label="Pembentangan 27 slaid">
+      <div class="stage" id="stage" tabindex="0" aria-label="Slaid pembentangan. Gunakan anak panah kiri dan kanan untuk menukar slaid.">
+        <img id="slide-image" src="assets/slides/slide-01.jpg" alt="Slaid 1: Selamat datang" fetchpriority="high" draggable="false">
+        <div id="blackout" hidden><span>Skrin direhatkan · Tekan B untuk kembali</span></div>
+        <p id="image-error" hidden>Slaid tidak dapat dimuatkan. Semak sambungan internet atau buka fail PDF.</p>
+      </div>
+      <nav class="controls" aria-label="Kawalan pembentangan">
+        <div class="navigation">
+          <button id="previous" type="button" aria-label="Slaid sebelumnya" title="Sebelumnya (←)"><span aria-hidden="true">←</span></button>
+          <span id="counter" role="status" aria-live="polite">1 / 27</span>
+          <button id="next" type="button" aria-label="Slaid seterusnya" title="Seterusnya (→)"><span aria-hidden="true">→</span></button>
+        </div>
+        <span id="slide-title" class="slide-title">Selamat datang</span>
+        <div class="view-actions">
+          <button id="outline-toggle" type="button" aria-expanded="false" aria-controls="outline">Senarai slaid</button>
+          <button id="blackout-toggle" type="button" aria-pressed="false" title="Rehatkan skrin (B)">Rehatkan skrin</button>
+          <button id="exit-fullscreen" type="button" hidden>Keluar skrin penuh</button>
+        </div>
+      </nav>
+      <div class="progress" aria-hidden="true"><div id="progress-fill"></div></div>
+    </section>
+    <section id="outline" class="outline" hidden aria-label="Pilih slaid"></section>
+    <div class="below-deck">
+      <p class="keyboard-hint">← → atau Space untuk menukar slaid <span>·</span> F untuk skrin penuh <span>·</span> B untuk rehatkan skrin</p>
+      <div class="downloads"><a href="downloads/aluan-ktr-mmm-2026.pptx" download>PowerPoint</a><a href="downloads/aluan-ktr-mmm-2026.pdf" target="_blank" rel="noopener">PDF</a></div>
+    </div>
+    <details class="transcript"><summary>Teks slaid semasa</summary><div id="slide-text"></div></details>
+    <p id="message" class="message" role="status" hidden></p>
+  </main>
+  <footer><span>Kolej Tun Razak, Universiti Teknologi Malaysia</span><a href="https://people.utm.my/murtadha/" target="_blank" rel="noopener">Profil Menjalankan Tugas Pengetua</a></footer>
+  <noscript><p class="message">Aktifkan JavaScript untuk menukar slaid, atau <a href="downloads/aluan-ktr-mmm-2026.pdf">buka PDF pembentangan</a>.</p></noscript>
+</body>
+</html>
