@@ -122,7 +122,7 @@ $('stage').addEventListener('touchend', e => {
 }, {passive:true});
 presentation.addEventListener('pointermove', showControls);
 window.addEventListener('hashchange', () => show(indexFromHash(), false));
-fetch('slides.json').then(response => {
+fetch('slides.json', {cache: 'no-store'}).then(response => {
   if (!response.ok) throw new Error('slides');
   return response.json();
 }).then(data => {
